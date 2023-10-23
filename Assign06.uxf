@@ -1,0 +1,55 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>290</x><y>10</y><w>160</w><h>180</h></coordinates><panel_attributes>Item
+--
+-ID: String
+-value: int
+--
++Item()
++Item(ID:String,value:int)
++getID(): String
++getValue(): int
++setID(ID: String): void
++setValue(value: int): void
++toString(): String
++load(input: Scanner): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>10</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Loadable/
+--
++input: Scanner
+--
+/+load(input: Scanner): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>120</y><w>210</w><h>60</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+/Drawable/
+--
+--
+/+draw(map: CharImage): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>220</y><w>210</w><h>150</h></coordinates><panel_attributes>Book
+--
+-skill: String
+--
++Book()
++Book(ID:String,value:int,skill:String)
++getSkill(): String
++setSkill(skill: String): void
++read():void
++toString(): String
++load(input: Scanner): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>220</y><w>170</w><h>170</h></coordinates><panel_attributes>Creature
+--
+-row: int
+-col: int
+--
+#Creature()
+#Creature(row: int,col:int)
++getrow(): int
++getCol(): int
++setRow(row: int): void
++setCol(col: int): void
++load(input: Scanner): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>280</x><y>430</y><w>170</w><h>90</h></coordinates><panel_attributes>Skeleton
+--
+--
++Skeleton()
++Skeleton(row: int,col:int)
++toString(): String
++draw(map: CharImage): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>430</y><w>170</w><h>90</h></coordinates><panel_attributes>Rat
+--
+--
++Rat()
++Rat(row: int,col:int)
++toString(): String
++draw(map: CharImage): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>60</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;70;10</additional_attributes></element><element><id>Relation</id><coordinates><x>70</x><y>380</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>380</y><w>100</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;50</additional_attributes></element><element><id>Relation</id><coordinates><x>30</x><y>170</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>90</y><w>80</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>30;10;60;60;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>180</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element></diagram>
